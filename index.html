@@ -1,69 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Malik Mumbai Pro</title>
-<style>
-body {
-  margin:0;
-  font-family: Arial;
-  background:#000;
-  color:#fff;
-  text-align:center;
-}
-.container {
-  padding:40px 20px;
-}
-h1 {
-  color:#00ffcc;
-}
-.timer {
-  font-size:22px;
-  margin:15px 0;
-  color:#ff4444;
-  font-weight:bold;
-}
-.btn {
-  display:inline-block;
-  margin-top:20px;
-  padding:15px 25px;
-  background:#00ffcc;
-  color:#000;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:8px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Cricket Tips</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle, #1e3a3a 0%, #0a0f0f 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 40px 20px;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .ipl-logo {
+            width: 140px;
+            margin-bottom: 20px;
+        }
+
+        .profile-img-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(45deg, #00ffcc, #33cc33);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0a0f0f;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            background: linear-gradient(90deg, #44cc44, #22aa22);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            margin-bottom: 25px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(50, 200, 50, 0.4);
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
+
+        .disclaimer b {
+            color: #bbb;
+        }
+    </style>
 </head>
-
 <body>
-<div class="container">
-  <h1>🔥 Malik Mumbai Pro</h1>
-  <p>IPL Match Prediction | VIP Tips</p>
 
-  <div class="timer">
-    ⏳ Only <span id="countdown">15</span> Seconds Left!
-  </div>
-  
-  <a href="https://telegram.me/+OFkqhPodJVY2Yzg1" class="btn">
-    👉 Join Telegram
-  </a>
-</div>
+    <div class="card">
+        <img src="logo.png" alt="IPL" class="ipl-logo">
 
-<script>
-let time = 15;
-let countdown = document.getElementById("countdown");
+        <div class="profile-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Nbe-B38_hG-y27WcskE1YV_R6uT7Lq9sPw&s" alt="Trophy">
+        </div>
 
-let timer = setInterval(() => {
-  time--;
-  countdown.innerText = time;
-  
-  if(time <= 0){
-    clearInterval(timer);
-    countdown.innerText = "0";
-  }
-}, 1000);
-</script>
+        <h1>Cricket Tips</h1>
+        <p>Join Now & Get Winning Teams Daily 🔥</p>
+
+        <a href="https://telegram.me/+OFkqhPodJVY2Yzg1" class="btn">JOIN TELEGRAM</a>
+
+        <div class="disclaimer">
+            <b>Disclaimer:</b> This channel shares cricket updates, analysis, and general information.
+        </div>
+    </div>
 
 </body>
 </html>
