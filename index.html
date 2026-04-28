@@ -15,38 +15,34 @@
             justify-content: center;
             align-items: center;
             color: white;
+            overflow: hidden;
         }
 
         .card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 40px;
-            padding: 35px 20px;
+            padding: 40px 20px;
             width: 88%;
             max-width: 350px;
             text-align: center;
             box-shadow: 0 25px 60px rgba(0,0,0,0.6);
         }
 
-        /* IPL Logo Fix */
-        .ipl-logo {
-            width: 140px;
-            margin-bottom: 25px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Trophy Circle Fix */
+        /* Round Image Section (Ab isme IPL Logo hai) */
         .profile-img-container {
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 25px;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 30px;
             border-radius: 50%;
-            padding: 4px;
+            padding: 5px;
             background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-            box-shadow: 0 0 25px rgba(79, 172, 254, 0.5);
+            box-shadow: 0 0 30px rgba(79, 172, 254, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
         }
 
@@ -54,12 +50,12 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            object-fit: cover;
-            background: white;
+            object-fit: contain; /* Isse logo katega nahi */
+            background: white; /* Logo ke piche white background achha lagega */
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 30px;
             margin: 0 0 10px 0;
             font-weight: 800;
             letter-spacing: -0.5px;
@@ -68,7 +64,7 @@
         p {
             font-size: 16px;
             color: #d1d1d1;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         /* Telegram Button */
@@ -81,15 +77,15 @@
             border-radius: 50px;
             font-weight: bold;
             font-size: 20px;
-            box-shadow: 0 10px 25px rgba(0, 200, 83, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
+            transition: 0.3s ease;
             margin-bottom: 30px;
             text-transform: uppercase;
         }
 
         .btn:hover {
-            transform: scale(1.03);
-            box-shadow: 0 15px 30px rgba(0, 200, 83, 0.5);
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 200, 83, 0.6);
         }
 
         .disclaimer {
@@ -103,10 +99,8 @@
 <body>
 
     <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/1200px-Indian_Premier_League_Official_Logo.svg.png" alt="IPL Logo" class="ipl-logo">
-
         <div class="profile-img-container">
-            <img src="https://m.media-amazon.com/images/I/41-A8z2X88L.jpg" alt="Trophy">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/1200px-Indian_Premier_League_Official_Logo.svg.png" alt="IPL Logo">
         </div>
 
         <h1>Malik Mumbai Pro</h1>
