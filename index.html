@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malik Mumbai Pro</title>
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+.container {
+  padding:40px 20px;
+}
+h1 {
+  color:#00ffcc;
+}
+.timer {
+  font-size:22px;
+  margin:15px 0;
+  color:#ff4444;
+  font-weight:bold;
+}
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 25px;
+  background:#00ffcc;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:8px;
+}
+</style>
+</head>
 
+<body>
+<div class="container">
+  <h1>🔥 Malik Mumbai Pro</h1>
+  <p>IPL Match Prediction | VIP Tips</p>
+
+  <div class="timer">
+    ⏳ Only <span id="countdown">15</span> Seconds Left!
+  </div>
+  
+  <a href="https://telegram.me/+OFkqhPodJVY2Yzg1" class="btn">
+    👉 Join Telegram
+  </a>
+</div>
+
+<script>
+let time = 15;
+let countdown = document.getElementById("countdown");
+
+let timer = setInterval(() => {
+  time--;
+  countdown.innerText = time;
+  
+  if(time <= 0){
+    clearInterval(timer);
+    countdown.innerText = "0";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
